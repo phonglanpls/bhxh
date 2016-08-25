@@ -1,0 +1,14 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>News</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content>
+	<img *ngIf="!!post.picture" src="{{post.picture}}"/>
+	<div padding>
+		<h2>{{post.title}}</h2>
+		<p>{{post.body}}</p>
+		<p><i>[{{post.tags.join(', ')}}]</i></p>
+	</div>
+</ion-content>

@@ -1,0 +1,71 @@
+<ion-header>
+	<ion-navbar>
+		<button menuToggle>
+			<ion-icon name="menu"></ion-icon>
+		</button>
+		<ion-title>Trang chủ</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content class="getting-started">
+	<div class="home-hello">
+		<img src="http://lorempixel.com/g/640/480/technics"/>
+
+		<div class="hello-title" text-wrap>
+			<h1>BHXH TỈNH LÀO CAI.</h1>
+			TP Lào Cai - Tỉnh Lào Cai
+		</div>
+	</div>
+
+	<ion-row *ngFor="let tilePair of tiles">
+		<ion-col *ngFor="let tile of tilePair">
+			<ion-card class="tile" (click)="navigateTo(tile)">
+				<ion-card-content>
+					<ion-item>
+						<h1>
+							<ion-icon [name]="tile.icon"></ion-icon>
+						</h1>
+						<h2>{{tile.title}}</h2>
+					</ion-item>
+				</ion-card-content>
+			</ion-card>
+		</ion-col>
+	</ion-row>
+
+	<ion-row>
+		<ion-card class="quick-action" (click)="callUs()">
+			<ion-card-content>
+				<ion-icon name="phone-portrait"></ion-icon>
+				<span>Gọi Hotline</span>
+			</ion-card-content>
+		</ion-card>
+	</ion-row>
+
+	<ion-row>
+		<ion-card class="quick-action" (click)="sendEmail()">
+			<ion-card-content>
+				<ion-icon name="mail"></ion-icon>
+				<span>Gửi Email</span>
+			</ion-card-content>
+		</ion-card>
+	</ion-row>
+
+	<ion-row>
+		<ion-card class="quick-action" (click)="getDirections()">
+			<ion-card-content>
+				<ion-icon name="compass"></ion-icon>
+				<span>Bản đồ</span>
+			</ion-card-content>
+		</ion-card>
+	</ion-row>
+
+	<ion-row>
+		<ion-card class="quick-action" (click)="openFacebookPage()">
+			<ion-card-content>
+				<ion-icon name="logo-facebook"></ion-icon>
+				<span>Facebook BHXH LaoCai</span>
+			</ion-card-content>
+		</ion-card>
+	</ion-row>
+
+</ion-content>

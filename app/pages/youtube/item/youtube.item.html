@@ -1,0 +1,15 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>YouTube video</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content>
+	<div class="video-container">
+		<iframe [src]="video.videoId | youtubeEmbedUrl" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<div padding>
+		<h2 class="card-title">{{video.title}}</h2>
+		<p>{{video.description}}</p>
+	</div>
+</ion-content>
