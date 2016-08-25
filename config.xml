@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.titaniumtemplates.bareboneionic2" version="1.2.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Barebone Ionic 2</name>
-    <description>Barebone Ionic. The boostrap you need in order to build your next Ionic application.</description>
+    <name>BHXH</name>
+    <description></description>
     <author email="skounis@gmail.com" href="http://about.me/stavros.kounis">Stavros Kounis</author>
     <content src="index.html" />
     <access origin="*" />
