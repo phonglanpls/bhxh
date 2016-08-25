@@ -31,8 +31,8 @@
     "run-sequence": "1.1.5",
     "typescript": "^1.8.10"
   },
-  "name": "barebone-ionic-2",
-  "description": "barebone-ionic-2: An Ionic project",
+  "name": "ionic-bhxh-ionic-2",
+  "description": "ionic-bhxh",
   "cordovaPlugins": [
     "cordova-plugin-device",
     "cordova-plugin-console",
